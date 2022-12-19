@@ -1,6 +1,6 @@
 # Fernweh Restaurant Web Sayfası
 
-## Bu proje; Sadık Turan'ın  [Komple Uygulamalı WEB Developer Kursu](https://www.udemy.com/course/komple-web-developer-kursu/) CSS kısmının 4. bölümüne kadar derslerle birlikte https://preview.colorlib.com/#feliciano sayfasının içeriği baz alınarak hazırlanmıştır.
+## Bu proje; Sadık Turan'ın  [Komple Uygulamalı WEB Developer Kursu](https://www.udemy.com/course/komple-web-developer-kursu/) CSS kısmının 4. bölümüne kadar derslerle birlikte [buradaki](https://preview.colorlib.com/#feliciano) sayfasının içeriği baz alınarak hazırlanmıştır.
 
 &nbsp;
 
