@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&family=Roboto:wght@500;700;900&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url("booking-form.css");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.col-2 {
+  width: 50%;
+  float: left;
+}
+.col-3 {
+  width: 33.3%;
+  float: left;
+}
+.col-4 {
+  width: 25%;
+  float: left;
+}
+
+.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/************************************** Navbar CSS*********************** */
+.navbar-logo h2 {
+  padding: 13px 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+header {
+  background-color: brown;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.navbar a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.navbar-menu ul {
+  margin: 0;
+  padding: 15px 0;
+  text-align: right;
+}
+.navbar-menu ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 15px;
+  padding: 0 5px;
+}
+
+/************************************** Navbar CSS*********************** */
+
+/**************************************Main-Page CSS*********************** */
+
+#main-page {
+  background: linear-gradient(
+      to bottom,
+      rgba(49, 48, 48, 0.5),
+      rgba(35, 34, 34, 0.5)
+    ),
+    url("../img/bg.jpg");
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative;
+}
+
+.text-bg {
+  background-color: rgba(102, 98, 98, 0.3);
+  position: absolute;
+  padding: 20px 30px 30px 30px;
+  border-radius: 10px;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  box-shadow: 10px 5px 25px rgb(27, 27, 27);
+  transition: 0.8s;
+}
+
+.text-bg:hover {
+  box-shadow: 10px 5px 10px rgb(95, 94, 94);
+}
+.main-text {
+  color: #fff;
+}
+
+.main-text h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.main-text p {
+  padding-bottom: 15px;
+}
+
+#details {
+  text-decoration: none;
+  background-color: brown;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 12px;
+  transition: 0.8s;
+  color: #fff;
+  font-size: 15px;
+}
+
+#details:hover {
+  background-color: #fff;
+  color: brown;
+  border: 1px solid brown;
+  cursor: pointer;
+}
+/**************************************Main-Page CSS*********************** */
+
+/**************************************Food Card CSS*********************** */
+.food-img {
+  width: 100%;
+}
+
+.food-container {
+  margin-top: 40px;
+}
+
+.food-container__item {
+  padding: 5px;
+}
+
+.food-card {
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+  height: 350px;
+  transition: 0.8s;
+}
+
+.food-card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(99, 99, 228, 0.5) 0px 6px 18px -2px,
+    rgba(163, 50, 50, 0.6) 0px 3px 10px -3px;
+}
+
+.food-text {
+  text-align: center;
+}
+
+.food-text h4 {
+  font-size: 15px;
+  margin: 0;
+  padding: 10px;
+}
+
+.food-text p {
+  font-size: 12px;
+  margin: 0;
+  padding: 10px;
+}
+
+/************************************** Counter CSS **************************************/
+
+.counter-container {
+  margin-top: 90px;
+}
+
+.counter-part {
+  padding: 10px;
+  text-align: center;
+}
+
+.counter-part h2 {
+  font-size: 40px;
+  color: brown;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.counter-part span {
+  font-size: 15px;
+}
+/************************************** Counter CSS **************************************/
+
+/************************************** Services Section CSS **************************************/
+.services-container {
+  margin-top: 90px;
+}
+#services-title {
+  text-align: center;
+
+}
+
+.services {
+  margin-top: 20px;
+}
+#services-title h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+#services-title h3 {
+  font-family: "Pacifico";
+  font-size: 100px;
+  color: brown;
+}
+
+#services-title h4 {
+  font-family: "Fredoka One";
+  font-size: 50px;
+  position: relative;
+  top: -64px;
+}
+
+.services-col {
+  text-align: center;
+  padding: 0px 18px;
+}
+
+.services-col h3 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+
+.fa-regular, .fa-solid {
+  font-size: 35px;
+  font-weight: 600;
+  color: brown;
+  padding: 10px 0;
+}
+/************************************** Services CSS **************************************/
+
+/************************************** Footer CSS **************************************/
+
+footer {
+  background-color: #3f1f72;
+    padding: 30px;
+    margin-top: 30px;
+    position: relative;
+    bottom: -300px;
+}
+
+/************************************** Footer CSS **************************************/
