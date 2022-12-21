@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&family=Roboto:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&family=Roboto:wght@500;700;900&display=swap");
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 @import url("booking-form.css");
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
@@ -34,39 +36,81 @@ body {
   display: block;
 }
 /************************************** Navbar CSS*********************** */
-.navbar-logo h2 {
-  padding: 13px 0;
-  margin: 0;
-  font-size: 18px;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: brown;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.5s;
-}
-header {
-  background-color: brown;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-.navbar a:hover {
-  color: black;
-  cursor: pointer;
+.navbar .navbar-logo {
+  align-self: left;
 }
 
 .navbar-menu ul {
-  margin: 0;
-  padding: 15px 0;
-  text-align: right;
-}
-.navbar-menu ul li {
-  display: inline-block;
+  display: flex;
   list-style-type: none;
-  font-size: 15px;
-  padding: 0 5px;
+}
+
+nav a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+nav a:hover {
+  background-color: rgb(138, 49, 49);
+
+}
+
+
+.navbar-menu ul li:last-child {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar-menu ul li:last-child {
+    display: block;
+  }
+  .navbar-menu ul li:not(li:last-child) {
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+    position: relative;
+  }
+  .navbar-menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-menu ul li:last-child {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+  }
+
+  .navbar-menu ul li:not(li:last-child) {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navbar-menu ul li:not(li:last-child) a:hover{
+    background-color: rgb(138, 49, 49);
+  }
+  .navbar-logo {
+    align-self: flex-start;
+  }
+
+  .responsive .navbar-menu ul li:not(li:last-child) {
+    display: block;
+  }
+  .responsive .navbar-menu ul li:not(li:last-child) a:hover{
+    background-color: rgb(138, 49, 49);
+  }
 }
 
 /************************************** Navbar CSS*********************** */
@@ -206,7 +250,6 @@ header {
 }
 #services-title {
   text-align: center;
-
 }
 
 .services {
@@ -242,8 +285,8 @@ h4 {
   font-weight: 200;
 }
 
-
-.fa-regular, .fa-solid {
+.fa-regular,
+.fa-solid {
   font-size: 35px;
   font-weight: 600;
   color: brown;
@@ -252,13 +295,46 @@ h4 {
 /************************************** Services CSS **************************************/
 
 /************************************** Footer CSS **************************************/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: brown;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
 
-footer {
-  background-color: #3f1f72;
-    padding: 30px;
-    margin-top: 30px;
+.footer .footer-logo {
+  align-self: left;
+}
+
+.footer-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+footer a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+footer a:hover {
+  background-color: rgb(138, 49, 49);
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .footer {
+    flex-direction: column;
     position: relative;
-    bottom: -300px;
+  }
+
+
 }
 
 /************************************** Footer CSS **************************************/

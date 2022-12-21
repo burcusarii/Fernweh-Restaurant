@@ -6,21 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fernweh Restaurant</title>
     <link rel="stylesheet" href="css/style.css" />
-    <style></style>
-  </head>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+      }
 
+      .navbar .navbar-logo {
+        align-self: left;
+      }
+    </style>
+  </head>
+  <script>
+    function displaymenu() {
+      var link = document.getElementById("main-nav");
+      link.classList.toggle("responsive");
+    }
+  </script>
   <body>
     <header>
-      <nav class="container">
-        <nav class="row navbar">
-          <nav class="col-2 navbar-logo">
+      <nav>
+        <nav id="main-nav" class="navbar">
+          <nav class="navbar-logo">
             <h2><a href="index.html">Fernweh</a></h2>
           </nav>
-          <nav class="col-2 navbar-menu">
+          <nav class="navbar-menu">
             <ul>
               <li><a>About US</a></li>
               <li><a>Menu</a></li>
-              <li><a href="booking.html">Book</a></li>
+              <li><a href="#">Book</a></li>
+              <li>
+                <a href="#" onclick="displaymenu()"
+                  ><i class="fa fa-bars"></i
+                ></a>
+              </li>
             </ul>
           </nav>
         </nav>
@@ -167,16 +186,16 @@
       </section>
     </main>
     <footer>
-      <nav class="container">
-        <nav class="row navbar">
-          <nav class="col-2 navbar-logo">
+      <nav>
+        <nav id="main-footer" class="footer">
+          <nav class="footer-logo">
             <h2><a href="index.html">Fernweh</a></h2>
           </nav>
-          <nav class="col-2 navbar-menu">
+          <nav class="footer-menu">
             <ul>
               <li><a>About US</a></li>
               <li><a>Menu</a></li>
-              <li><a href="booking.html">Book</a></li>
+              <li><a href="#">Book</a></li>
             </ul>
           </nav>
         </nav>
